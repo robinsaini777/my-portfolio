@@ -1,0 +1,145 @@
+/* Home Container */
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.home-container.light {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+/* Dark Mode */
+.home-container.dark {
+  background-color: #222;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  margin-bottom: 50px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 span {
+  color: #27ae60;
+}
+
+/* Wave Animation for Hand Emoji */
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-15deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1s infinite;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #219150;
+}
+
+.secondary-btn {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: #1e2d40;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  border-radius: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode About Section */
+.about.light {
+  background: #fff7e6;  /* Light Orange/Beige Background */
+  color: black;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode About Section */
+.about.dark {
+  background: #333; /* Darker Grey */
+  color: white;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,8 @@
+footer {
+  position: relative;  /* 👈 Fixed hatao */
+  width: 100%;
+  background-color: #1a2a38;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}

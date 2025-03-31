@@ -1,0 +1,58 @@
+.contact-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f8f9fa;
+  min-height: 80vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark .contact-container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body.dark .contact-title {
+  color: #ffffff;
+}
+
+.contact-details {
+  font-size: 1.2rem;
+  color: #333;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+body.dark .contact-details {
+  background: #333;
+  color: #ffffff;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+body.dark .contact-details a {
+  color: #66ff99;
+}
+
+.contact-details a:hover {
+  color: #219150;
+}

@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+.navbar.light {
+  background: #ffffff;
+  color: #2c3e50;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+.navbar.dark {
+  background: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #27ae60;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background: #27ae60;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.theme-toggle-btn:hover {
+  background: #219150;
+}
