@@ -14,6 +14,7 @@ const App = () => {
     <ThemeProvider>
       <Router>
         <Navbar />
+        <Home />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
