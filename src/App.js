@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <ThemeProvider>
-      {/* Fix: Router me basename add karo */}
       <Router basename="/my-portfolio">
         <Navbar />
         <Routes>
