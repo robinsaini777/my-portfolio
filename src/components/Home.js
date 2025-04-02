@@ -1,10 +1,12 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext"; // Import theme hook
+import { useNavigate } from "react-router-dom"; // React Router navigation
 import "../styles/Home.css"; 
 import profileImage from "../assets/mine.jpg"; 
 
 const Home = () => {
   const { theme } = useTheme(); // Get current theme
+  const navigate = useNavigate(); // Initialize navigation
 
   return (
     <div className={`home-container ${theme}`}>
@@ -13,8 +15,9 @@ const Home = () => {
         <h1>Hi, I'm <span>Robin Saini</span> <span className="wave">👋</span></h1>
         <p>A passionate Web Developer skilled in React.js, JavaScript, and CSS.</p>
         <div className="hero-buttons">
-          <a href="/my-portfolio/projects" className="btn primary-btn">View Projects</a>
-          <a href="/my-portfolio/contact" className="btn secondary-btn">Contact Me</a>
+          {/* Use navigate for internal routing */}
+          <button onClick={() => navigate("/projects")} className="btn primary-btn">View Projects</button>
+          <button onClick={() => navigate("/contact")} className="btn secondary-btn">Contact Me</button>
         </div>
       </div>
 
@@ -37,4 +40,3 @@ const Home = () => {
 };
 
 export default Home;
-
