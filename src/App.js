@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -11,7 +11,8 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <ThemeProvider>
-      <HashRouter>
+      {/* Fix: Router me basename add karo */}
+      <Router basename="/my-portfolio">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,7 +22,7 @@ const App = () => {
           <Route path="*" element={<h2 style={{ textAlign: "center" }}>Page Not Found</h2>} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </Router>
     </ThemeProvider>
   );
 };
