@@ -13,8 +13,8 @@ const Home = () => {
         <h1>Hi, I'm <span>Robin Saini</span> <span className="wave">👋</span></h1>
         <p>A passionate Web Developer skilled in React.js, JavaScript, and CSS.</p>
         <div className="hero-buttons">
-          <a href="/my-portfolio/projects" className="btn primary-btn">View Projects</a>
-          <a href="/my-portfolio/contact" className="btn secondary-btn">Contact Me</a>
+          <a href="/my-portfolio/#/projects" className="btn primary-btn">View Projects</a>
+          <a href="/my-portfolio/#/contact" className="btn secondary-btn">Contact Me</a>
         </div>
       </div>
 
