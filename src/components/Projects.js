@@ -21,6 +21,11 @@ const Projects = () => {
       description: "A real-time weather application that provides live weather updates, animated weather icons, and a beautiful user interface with dark & light mode.",
       url: "https://robinsaini777.github.io/weather-app/",
     },
+    {
+      title: "Quiz App Project",
+      description: "An interactive quiz application built with React, featuring multiple categories, score tracking, and a clean, modern UI.",      
+      url: "https://robinsaini777.github.io/quiz-project/",
+    }
   ];
 
   return (
