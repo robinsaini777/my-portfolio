@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: "Quiz App Project",
       description: "An interactive quiz application built with React, featuring multiple categories, score tracking, and a clean, modern UI.",      
-      url: "https://robinsaini777.github.io/quiz-project/",
+      url: "https://robinsaini777.github.io/quiz-app/",
     }
   ];
 
